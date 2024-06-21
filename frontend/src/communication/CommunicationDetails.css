@@ -1,0 +1,30 @@
+.box{
+    border: 1px solid black none;
+    height: fit-content;
+    width: 220px;
+    margin: 10% auto;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form{
+    border: 1px solid black none;
+}
+input[type=text],input[type=email],input[type=password]{
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+}
+textarea{
+    border-radius: 10px;
+    height: 60px;
+    width: 180px;
+}
+button{
+    border: none;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+}
