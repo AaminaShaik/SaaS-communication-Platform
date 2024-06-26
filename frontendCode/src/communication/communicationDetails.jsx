@@ -34,7 +34,7 @@ function CommunicationDetails({ user }) {
     <div>
       <h1 style={{textAlign:'center'}}>Welcome, {user.name}</h1>
 
-      <h2 style={{color:'green',textAlign:'center'}}>Your Emails</h2>
+      <h2 style={{color:'green',textAlign:'center'}}>Your Email</h2>
       <ul>
         {emails.map(email => (
           <li key={email.id}>{email.subject}</li>
@@ -42,11 +42,11 @@ function CommunicationDetails({ user }) {
       </ul>
       <div className="box">
 
-        <h2 style={{color:'red',textAlign:'center'}}>Send a New Email</h2>
+        <h2 style={{color:'red',textAlign:'center'}}>Send an Email</h2>
         <form onSubmit={handleSubmit} className="form">
-          To : <br /><input type="email" name="to" value={newEmail.to} onChange={handleChange} placeholder="To" required /><br /><br />
-          Subject : <br /><input type="text" name="subject" value={newEmail.subject} onChange={handleChange} placeholder="Subject" required /><br /><br />
-          Body : <br /><textarea name="body" value={newEmail.body} onChange={handleChange} placeholder="Body" required /><br /><br />
+          <p>To :</p> <input type="email" name="to" value={newEmail.to} onChange={handleChange} placeholder="To" required /><br /><br />
+          <p>Subject : </p><input type="text" name="subject" value={newEmail.subject} onChange={handleChange} placeholder="Subject" required /><br /><br />
+          <p>Body :</p> <textarea name="body" value={newEmail.body} onChange={handleChange} placeholder="Body" required /><br /><br />
           <button type="submit" style={{cursor:'pointer'}}>Send Email</button>
         </form>
       </div>
